@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BioInfo Navigator · 生物信息学习导航</title>
+  <meta name="description" content="BioInfo Navigator：整合生物信息学习路径、R语言软件下载、公众号实操检索与免费视频课程。" />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">Bio</div>
+        <div class="meta">
+          <div class="cn">BioInfo Navigator</div>
+          <div class="en">生物信息实战学习台</div>
+        </div>
+      </div>
+      <nav class="menu">
+        <a href="#download">软件下载</a>
+        <a href="#path">学习路径</a>
+        <a href="#practice">实操检索</a>
+        <a href="#resources">资源导航</a>
+        <a href="#videos" class="btn">视频课堂</a>
+      </nav>
+      <button class="menu-toggle" aria-label="打开菜单">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="pill">聚焦 R 语言 · 面向生信实战</p>
+        <h1>一站式生物信息学习导航</h1>
+        <p class="lead">整理 R 语言软件下载、公众号代码检索、实用教程与站内精选视频。按图索骥就能开启你的分析之旅。</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#download">立即配置环境</a>
+          <a class="btn ghost" href="#practice">去找公众号教程</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>下载 R 语言与常用工具</h2>
+          <p>点击下方按钮即可跳转 R 语言官网。建议先安装 R，再安装 RStudio 或 VS Code 来获得更佳体验。</p>
+          <div class="download-actions">
+            <a class="btn primary" href="https://cran.r-project.org/bin/windows/base/" target="_blank" rel="noopener">前往 R 语言官网</a>
+            <a class="btn outline" href="https://posit.co/download/rstudio-desktop/" target="_blank" rel="noopener">下载 RStudio</a>
+          </div>
+          <ul class="ticks">
+            <li>涵盖 Windows/macOS/Linux 多平台版本</li>
+            <li>同时附带镜像站列表，下载更稳定</li>
+            <li>附赠 R 包推荐表：tidyverse、Bioconductor 等</li>
+          </ul>
+        </div>
+        <div>
+          <div class="card highlight">
+            <h3>环境配置清单</h3>
+            <div class="stack">
+              <div>
+                <strong>R 语言 4.4+</strong>
+                <p>基础统计与 Bioconductor 包的运行核心。</p>
+              </div>
+              <div>
+                <strong>RStudio / VS Code</strong>
+                <p>集成终端、Git 与脚本执行面板。</p>
+              </div>
+              <div>
+                <strong>Bioconductor 管理器</strong>
+                <p>一条命令安装 DESeq2、Seurat、clusterProfiler。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="path" class="section alt">
+      <div class="container">
+        <h2>生信学习路径</h2>
+        <div class="timeline">
+          <div class="node">
+            <span>01</span>
+            <div>
+              <h3>基础数据素养</h3>
+              <p>掌握 R 语言语法、数据框处理、可视化（ggplot2）。</p>
+            </div>
+          </div>
+          <div class="node">
+            <span>02</span>
+            <div>
+              <h3>生物信息管线</h3>
+              <p>熟悉测序流程、差异分析（DESeq2 / edgeR）与注释。</p>
+            </div>
+          </div>
+          <div class="node">
+            <span>03</span>
+            <div>
+              <h3>转化与报告</h3>
+              <p>用 R Markdown、Quarto 自动化生成图表与交互式报告。</p>
+            </div>
+          </div>
+          <div class="node">
+            <span>04</span>
+            <div>
+              <h3>实战项目</h3>
+              <p>复现 TCGA/单细胞/空间组学案例，沉淀自己的模板。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="practice" class="section">
+      <div class="container">
+        <h2>公众号实操检索</h2>
+        <p>随手输入关键字，一键跳转搜狗公众号搜索页，查找图文+代码示例。</p>
+        <form id="search-form" class="search-box">
+          <input id="keyword" placeholder="例：单细胞 聚类 可视化" required />
+          <button type="submit" class="btn primary">去搜教程</button>
+        </form>
+        <div class="quick-tags">
+          <button type="button" data-keyword="单细胞 R语言 代码">单细胞分析</button>
+          <button type="button" data-keyword="转录组 R语言 教程">转录组差异</button>
+          <button type="button" data-keyword="R语言 画图 极简">可视化排版</button>
+          <button type="button" data-keyword="R语言 Bioconductor 安装">Bioconductor 安装</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section alt">
+      <div class="container grid-2">
+        <div>
+          <h2>公众号文章导航</h2>
+          <p>精选高质量的生物信息作者，覆盖入门到进阶的代码片段。</p>
+          <ul class="resource-list">
+            <li>
+              <div>
+                <h3>生信技能树</h3>
+                <p>系统梳理代谢组、单细胞分析的 R 语言脚本与可视化模板。</p>
+              </div>
+              <a href="https://mp.weixin.qq.com/" target="_blank" rel="noopener">前往公众号</a>
+            </li>
+            <li>
+              <div>
+                <h3>医学和生信笔记</h3>
+                <p>提供 DESeq2、GSEA、富集分析的逐行注释代码。</p>
+              </div>
+              <a href="https://mp.weixin.qq.com/" target="_blank" rel="noopener">查看文章</a>
+            </li>
+            <li>
+              <div>
+                <h3>北极星生物信息</h3>
+                <p>聚焦真实项目案例，附带可复现的脚本仓库。</p>
+              </div>
+              <a href="https://mp.weixin.qq.com/" target="_blank" rel="noopener">了解更多</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>工具与模版</h2>
+          <div class="cards">
+            <div class="card">
+              <h3>R 包速查</h3>
+              <p>tidyverse、data.table、Seurat、clusterProfiler 核心语法速览。</p>
+              <a class="btn text" href="https://www.bioconductor.org/" target="_blank" rel="noopener">Bioconductor</a>
+            </div>
+            <div class="card">
+              <h3>可视化画廊</h3>
+              <p>挑选 20+ 生信常用图型（火山图、风玫瑰、气泡图）的 ggplot2 代码。</p>
+              <a class="btn text" href="https://r-graph-gallery.com/" target="_blank" rel="noopener">R Graph Gallery</a>
+            </div>
+            <div class="card">
+              <h3>项目脚手架</h3>
+              <p>下载 R Markdown / Quarto 模版，自动生成报告目录与图注。</p>
+              <a class="btn text" href="https://quarto.org/docs/gallery/" target="_blank" rel="noopener">Quarto Gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="videos" class="section">
+      <div class="container">
+        <h2>相关视频课堂</h2>
+        <p>精选站内/站外免费视频，涵盖软件安装到完整项目解析。</p>
+        <div class="media-grid">
+          <article class="media-card">
+            <div>
+              <p class="tag">环境搭建</p>
+              <h3>R 语言+RStudio 极速配置</h3>
+              <p>逐步演示下载、安装以及国内镜像配置。</p>
+            </div>
+            <a class="btn primary" href="https://www.bilibili.com/video/BV1gE411x7se" target="_blank" rel="noopener">跳转 B 站</a>
+          </article>
+          <article class="media-card">
+            <div>
+              <p class="tag">单细胞</p>
+              <h3>Seurat 流程全解析</h3>
+              <p>从数据质控到分群注释的完整流程与脚本。</p>
+            </div>
+            <a class="btn primary" href="https://www.bilibili.com/video/BV1Rt4y1C7z9" target="_blank" rel="noopener">立即观看</a>
+          </article>
+          <article class="media-card">
+            <div>
+              <p class="tag">报告交付</p>
+              <h3>Quarto 生信日报模版</h3>
+              <p>示例演示如何将结果自动生成为 HTML 仪表盘。</p>
+            </div>
+            <a class="btn primary" href="https://youtu.be/lJq6YF1O8NY" target="_blank" rel="noopener">查看示例</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot">
+      <div>© <span id="year"></span> BioInfo Navigator · 记录学习、加速成长</div>
+      <div class="links">
+        <a href="#download">R 语言下载</a>
+        <a href="#practice">公众号检索</a>
+        <a href="#videos">视频课堂</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const btn = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+    btn.addEventListener('click', () => menu.classList.toggle('open'));
+
+    const form = document.getElementById('search-form');
+    const keywordInput = document.getElementById('keyword');
+    const quickButtons = document.querySelectorAll('[data-keyword]');
+
+    function openWeChatSearch(text) {
+      const query = encodeURIComponent(`${text} R 语言 生物信息 公众号 代码`);
+      const url = `https://weixin.sogou.com/weixin?type=2&query=${query}`;
+      window.open(url, '_blank');
+    }
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!keywordInput.value.trim()) return;
+      openWeChatSearch(keywordInput.value.trim());
+      form.reset();
+    });
+
+    quickButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const text = button.dataset.keyword;
+        openWeChatSearch(text);
+      });
+    });
+  </script>
+</body>
+</html>
